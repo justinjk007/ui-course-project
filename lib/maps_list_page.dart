@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'maps_list_widget.dart';
 
 class MapsListPage extends StatefulWidget {
   MapsListPage({
@@ -17,7 +18,9 @@ class _MapsListPageState extends State<MapsListPage> {
       ),
       body: ListView(
         padding: EdgeInsets.all(8),
-        children: <Widget>[], // List
+        children: <Widget>[
+          MapsListWidget(),
+        ], // List
       ),
     );
   }
