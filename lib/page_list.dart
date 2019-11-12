@@ -19,9 +19,7 @@ class PageList extends StatelessWidget {
                 Navigator.push(
                   context,
                   new MaterialPageRoute(
-                    builder: (context) => new MapsListPage(
-                      title: "Test title",
-                    ),
+                    builder: (context) => new MapsListPage(),
                   ),
                 );
               },
