@@ -10,7 +10,7 @@ class MapsListWidget extends StatefulWidget {
   }) : super(key: key);
 
   final String title;
-  final String content;
+  final Widget content;
   final String image;
   final Function onTap;
 
@@ -23,7 +23,7 @@ class _MapsListWidgetState extends State<MapsListWidget> {
   Widget build(BuildContext context) {
     return Card(
       child: SizedBox(
-        height: 190.0,
+        height: 170.0,
         child: InkWell(
           onTap: widget.onTap,  //whatever function was passed to this
           child: Row(
@@ -38,8 +38,9 @@ class _MapsListWidgetState extends State<MapsListWidget> {
                     Text(
                       widget.title,
                       style: TextStyle(fontWeight: FontWeight.bold),
+                      textScaleFactor: 1.5,
                     ),
-                    Text(widget.content),
+                    widget.content, // content is a widget, usually a Text widget
                   ],
                 ),
               ),
