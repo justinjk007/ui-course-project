@@ -22,3 +22,7 @@ flutter:
    - assets/map1.jpg
    - assets/map2.jpg
    - assets/map3.jpg
+   - assets/map1_crop.jpg       # These croped images need to 800x800
+   - assets/map2_crop.jpg       # These croped images need to 800x800
+   - assets/map3_crop.jpg       # These croped images need to 800x800
+

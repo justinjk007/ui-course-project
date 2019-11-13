@@ -19,7 +19,24 @@ class _MapsListPageState extends State<MapsListPage> {
       body: ListView(
         padding: EdgeInsets.all(8),
         children: <Widget>[
-          MapsListWidget(),
+          MapsListWidget(
+            title: "title",
+            content: "content",
+            image: "assets/map1_crop.jpg",
+            // onTap:
+          ),
+          MapsListWidget(
+            title: "title",
+            content: "content",
+            image: "assets/map2_crop.jpg",
+            // onTap:
+          ),
+          MapsListWidget(
+            title: "title",
+            content: "content",
+            image: "assets/map3_crop.jpg",
+            // onTap:
+          ),
         ], // List
       ),
     );
