@@ -1,6 +1,7 @@
 import 'package:byke/LoginRegisterPage.dart';
 import 'package:flutter/material.dart';
 import 'maps_list_page.dart';
+import 'maps_selected_page.dart';
 
 class PageList extends StatelessWidget {
   @override
@@ -26,10 +27,23 @@ class PageList extends StatelessWidget {
               },
             ),
             RaisedButton(
+<<<<<<< HEAD
               child: Text("LoginRegisterPage"),
               onPressed: () {
                 Navigator.push(context, new MaterialPageRoute(builder: (context) => new LoginRegisterPage(),
                 ),
+=======
+              child: Text("maps_selected_page"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new PageSelected(
+                      image: "assets/map1.jpg",
+                      title: "OnTech U Circle",
+                    ),
+                  ),
+>>>>>>> bb14b0ed26dff2abed45a64b511806dc6515f5b5
                 );
               },
             ),
