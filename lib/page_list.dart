@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'maps_list_page.dart';
+import 'maps_selected_page.dart';
 
 class PageList extends StatelessWidget {
   @override
@@ -20,6 +21,17 @@ class PageList extends StatelessWidget {
                   context,
                   new MaterialPageRoute(
                     builder: (context) => new MapsListPage(),
+                  ),
+                );
+              },
+            ),
+            RaisedButton(
+              child: Text("maps_selected_page"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new PageSelected(image:"assets/map1.jpg"),
                   ),
                 );
               },

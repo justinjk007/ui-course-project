@@ -10,6 +10,8 @@ class MapsListPage extends StatefulWidget {
 }
 
 class _MapsListPageState extends State<MapsListPage> {
+  // TODO: Add hero animation from this page
+  // TODO: use https://pub.dev/packages/expandable_card
   Widget makeContent(String main, String stars) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
