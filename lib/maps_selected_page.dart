@@ -33,6 +33,7 @@ class _PageSelectedState extends State<PageSelected> {
             minHeight: 100,
             backgroundColor: Colors.blue,
             children: <Widget>[
+              // Shows cals burned and so on here
               Text(
                 widget.title,
                 style: TextStyle(fontWeight: FontWeight.bold),
