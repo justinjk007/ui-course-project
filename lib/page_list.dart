@@ -31,7 +31,10 @@ class PageList extends StatelessWidget {
                 Navigator.push(
                   context,
                   new MaterialPageRoute(
-                    builder: (context) => new PageSelected(image:"assets/map1.jpg"),
+                    builder: (context) => new PageSelected(
+                      image: "assets/map1.jpg",
+                      title: "OnTech U Circle",
+                    ),
                   ),
                 );
               },

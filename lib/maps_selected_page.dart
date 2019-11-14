@@ -4,10 +4,12 @@ import 'package:expandable_card/expandable_card.dart';
 class PageSelected extends StatefulWidget {
   PageSelected({
     Key key,
+    this.title,
     this.image,
   }) : super(key: key);
 
   final String image;
+  final String title;
 
   @override
   _PageSelectedState createState() => _PageSelectedState();
@@ -27,7 +29,16 @@ class _PageSelectedState extends State<PageSelected> {
             ),
           ),
           expandableCard: ExpandableCard(
-            children: <Widget>[Text("Hello world")],
+            padding: EdgeInsets.all(0),
+            minHeight: 100,
+            backgroundColor: Colors.blue,
+            children: <Widget>[
+              Text(
+                widget.title,
+                style: TextStyle(fontWeight: FontWeight.bold),
+                textScaleFactor: 1.5,
+              ),
+            ],
           ),
         ),
       ),
