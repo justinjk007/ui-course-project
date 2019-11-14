@@ -27,23 +27,24 @@ class PageList extends StatelessWidget {
               },
             ),
             RaisedButton(
-<<<<<<< HEAD
-              child: Text("LoginRegisterPage"),
+              child: Text("Login register"),
               onPressed: () {
-                Navigator.push(context, new MaterialPageRoute(builder: (context) => new LoginRegisterPage(),
-                ),
-=======
+                Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new LoginRegisterPage(),
+                  ),
+                );
+              },
+            ),
+            RaisedButton(
               child: Text("maps_selected_page"),
               onPressed: () {
                 Navigator.push(
                   context,
                   new MaterialPageRoute(
-                    builder: (context) => new PageSelected(
-                      image: "assets/map1.jpg",
-                      title: "OnTech U Circle",
-                    ),
+                    builder: (context) => new PageSelected(),
                   ),
->>>>>>> bb14b0ed26dff2abed45a64b511806dc6515f5b5
                 );
               },
             ),
