@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LoginRegisterPage extends StatefulWidget {
   LoginRegisterPage({
     this.onSignedIn,
@@ -64,15 +63,14 @@ class _LoginRegisterState extends State<LoginRegisterPage> {
     // TODO: implement build
     return new Scaffold(resizeToAvoidBottomInset: false,
       appBar: new AppBar(
-        title:
-            new Center(child: new Text("Byke", textAlign: TextAlign.center)),
+        title:Text('Byke'),
+            
       ),
       body: new Container(
         margin: EdgeInsets.all(15.0),
         child: new Form(
           key: formKey,
           child: new Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: createInputs() + createButtons(),
           ),
@@ -84,7 +82,6 @@ class _LoginRegisterState extends State<LoginRegisterPage> {
 //creats a vertical view
   List<Widget> createInputs() {
     return [
-      logo(),
       new TextFormField(
         maxLines: 1,
         keyboardType: TextInputType.emailAddress,
@@ -115,16 +112,6 @@ class _LoginRegisterState extends State<LoginRegisterPage> {
     ];
   }
 
-  Widget logo() {
-    return new Hero(
-      tag: 'hero',
-      child: new CircleAvatar(
-        backgroundColor: Colors.transparent,
-        radius: 80.0,
-        child: Image.asset('assets/flutter-icon.png'),
-      ),
-    );
-  }
 
   List<Widget> createButtons() {
     if (_formType == FormType.login) {
