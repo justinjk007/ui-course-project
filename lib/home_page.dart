@@ -24,9 +24,18 @@ class HomePageState extends State<HomePage> {
         child:ListView(
           children: <Widget>[
             CustomCard(), 
+            Text("Recently Completed:"),
             MapsListWidget(
               title: "OnTechU circle",
-              content: Text("hello"),
+              content: Text("Personal Time: 15 minutes\nRanking: 5th"),
+              height: 100,
+              image: "assets/map1_crop.jpg",
+            ),
+            Text("Popular Nearby:"),
+            MapsListWidget(
+              title: "OnTechU circle",
+              content: Text("Personal Time: 15 minutes\nRanking: 5th"),
+              height: 100,
               image: "assets/map1_crop.jpg",
             ),
           ],)
@@ -89,14 +98,14 @@ class CustomCard extends StatelessWidget {
               child: Container(
                 child: Center(
                   child: ListView(
-                    padding: EdgeInsets.all(10),
+                    padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                     children: <Widget>[
                       new CircleAvatar(
                         radius: 25.0,
-                        child: Image.asset("assets/profile.png"),
+                        child: Text("A"),
                       ),
                       Center(
-                        child: Text("Friends: 50 | Level: 3"),)
+                        child: Padding(child: Center( child: Text("Biking till I die!\nFriends: 50", textAlign: TextAlign.center,)), padding: EdgeInsets.all(10),)),
                     ],
                   ),
                 ),

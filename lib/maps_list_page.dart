@@ -43,11 +43,13 @@ class _MapsListPageState extends State<MapsListPage> {
                   "\nDistance: 700 meters\nCurrent record: 5 mins\nPoints Earned: 100\nDifficulty: medium\n",
                   "★★★★✩",
                 ),
+                height:170,
                 image: "assets/map1_crop.jpg",
                 // onTap:
               ),
               MapsListWidget(
                 title: "7 Stretch",
+                height: 170,
                 content: makeContent(
                   "\nDistance: 730 meters\nCurrent record: 3.5 mins\nPoints Earned: 80\nDifficulty: easy\n",
                   "★★★★★",
@@ -57,6 +59,7 @@ class _MapsListPageState extends State<MapsListPage> {
               ),
               MapsListWidget(
                 title: "That road",
+                height: 170,
                 content: makeContent(
                   "\nDistance: 500 meters\nCurrent record: 6 mins\nPoints Earned: 125\nDifficulty: hard\n",
                   "★★★✩✩",
