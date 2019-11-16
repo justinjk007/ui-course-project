@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:byke/LoginRegisterPage.dart';
 import 'maps_list_page.dart';
-import 'maps_selected_page.dart';
 import 'map_and_start_button.dart';
 import 'others_and_me.dart';
 
@@ -35,17 +34,6 @@ class PageList extends StatelessWidget {
                   context,
                   new MaterialPageRoute(
                     builder: (context) => new LoginRegisterPage(),
-                  ),
-                );
-              },
-            ),
-            RaisedButton(
-              child: Text("maps_selected_page"),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  new MaterialPageRoute(
-                    builder: (context) => new PageSelected(),
                   ),
                 );
               },
