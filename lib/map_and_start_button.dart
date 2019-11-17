@@ -21,6 +21,34 @@ class _MapAndStartButtonState extends State<MapAndStartButton> {
 
   @override
   Widget build(BuildContext context) {
+    void _showCaloriesBurned() {
+      // flutter defined function
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          // return object of type Dialog
+          return AlertDialog(
+            title: Text("Well done"),
+            content: Text(
+                "248 cals burned\nGained 2 meters in elevation\nTravelled 2.4 kms"),
+            actions: <Widget>[
+              // Usually buttons at the bottom of the dialog
+              FlatButton(
+                child: Text(
+                  "Close",
+                ),
+                onPressed: () {
+                  // Exit out of the window
+                  Navigator.of(context).pop();
+                },
+              ),
+              SizedBox(width: 10), // Add a little bit of padding after
+            ], // Actions ends here
+          );
+        },
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Start the race"),
@@ -51,6 +79,7 @@ class _MapAndStartButtonState extends State<MapAndStartButton> {
                       running = false;
                     });
                 } on Exception {}
+                _showCaloriesBurned();
               },
               child: TikTikTimer(
                 initialDate: DateTime.now(),

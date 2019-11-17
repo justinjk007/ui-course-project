@@ -11,7 +11,8 @@ class OthersAndMe extends StatelessWidget {
           // return object of type Dialog
           return AlertDialog(
             title: Text("Marques"),
-            content: Text("400 meters away\n\nGained 400 points last week\n\nLevel 5 active user"),
+            content: Text(
+                "400 meters away\n\nGained 400 points last week\n\nLevel 5 active user"),
             actions: <Widget>[
               // Usually buttons at the bottom of the dialog
               FlatButton(
