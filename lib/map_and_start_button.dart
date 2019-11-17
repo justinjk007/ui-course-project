@@ -41,19 +41,32 @@ class _MapAndStartButtonState extends State<MapAndStartButton> {
           SizedBox(height: 10), // Empty box as padding
           Visibility(
             visible: timer_visibility,
-            child: TikTikTimer(
-              initialDate: DateTime.now(),
-              running: running,
-              height: 50,
-              width: MediaQuery.of(context).size.width - 30,
-              backgroundColor: Colors.blue,
-              timerTextStyle: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
+            child: GestureDetector(
+              // This is timer widget made into a button, when clicked the timer will stop
+              onTap: () {
+                timer_visibility = false;
+                try {
+                  if (running == true)
+                    setState(() {
+                      running = false;
+                    });
+                } on Exception {}
+              },
+              child: TikTikTimer(
+                initialDate: DateTime.now(),
+                running: running,
+                height: 50,
+                width: MediaQuery.of(context).size.width - 30,
+                backgroundColor: Colors.blue,
+                timerTextStyle: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                ),
+                isRaised: true,
               ),
-              isRaised: true,
             ),
             replacement: ButtonTheme(
+              // This is the start button on top of the timer widget
               minWidth: MediaQuery.of(context).size.width - 30,
               height: 50,
               child: RaisedButton(

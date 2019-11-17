@@ -10,9 +10,8 @@ class OthersAndMe extends StatelessWidget {
         builder: (BuildContext context) {
           // return object of type Dialog
           return AlertDialog(
-            title: Text("mark49"),
-            // content: Text("This will reset all the activity status of "
-            //     "all weeks, this means you are starting a new 4 week streak..."),
+            title: Text("Marques"),
+            content: Text("400 meters away\n\nGained 400 points last week\n\nLevel 5 active user"),
             actions: <Widget>[
               // Usually buttons at the bottom of the dialog
               FlatButton(
