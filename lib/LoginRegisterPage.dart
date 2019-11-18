@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
 class LoginRegisterPage extends StatefulWidget {
   LoginRegisterPage({
     this.onSignedIn,
@@ -62,7 +64,13 @@ class _LoginRegisterState extends State<LoginRegisterPage> {
 
   void validateAndSubmit() async {
     if (validateAndSave()) {
-      //add the page transition here to the main page.
+      Navigator.pushReplacement(
+                  context,
+                  new MaterialPageRoute(
+                    settings: RouteSettings(isInitialRoute: true),
+                    builder: (context) => new HomePage(),
+                  ),
+                );
     }
   }
 

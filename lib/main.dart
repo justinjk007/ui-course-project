@@ -1,3 +1,4 @@
+import 'package:byke/LoginRegisterPage.dart';
 import 'package:flutter/material.dart';
 import 'page_list.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PageList(),         // Go to the page with list of buttons
+      home: LoginRegisterPage(),         // Go to the page with list of buttons
     );
   }
 }

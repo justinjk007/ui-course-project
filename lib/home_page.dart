@@ -25,14 +25,24 @@ class HomePageState extends State<HomePage> {
         child:ListView(
           children: <Widget>[
             CustomCard(), 
-            Text("Recently Completed:"),
+            Padding(padding: EdgeInsets.all(5),  child: Text("Recently Completed:",  style: TextStyle(
+                  color: Colors.grey[800],
+                  fontWeight: FontWeight.w900,
+                  fontFamily: 'Open Sans',
+                  fontSize: 20),
+            ),),
             MapsListWidget(
               title: "Don Valley Trail",
               content: Text("Personal Time: 15 minutes\nRanking: 5th"),
               height: 100,
               image: "assets/map3_crop.jpg",
             ),
-            Text("Popular Nearby:"),
+            Padding(padding: EdgeInsets.all(5),  child: Text("Popular Nearby:",  style: TextStyle(
+                  color: Colors.grey[800],
+                  fontWeight: FontWeight.w900,
+                  fontFamily: 'Open Sans',
+                  fontSize: 20),
+            ),),
             MapsListWidget(
               title: "Ontario Tech Loop",
               content: Text("Personal Time: N/A minutes\nRanking: N/A"),
