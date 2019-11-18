@@ -1,4 +1,5 @@
 import 'package:byke/home_page.dart';
+import 'package:byke/others_and_me.dart';
 import 'package:flutter/material.dart';
 import 'maps_list_widget.dart';
 
@@ -106,7 +107,7 @@ class _MapsListPageState extends State<MapsListPage> {
                   context,
                   new MaterialPageRoute(
                     settings: RouteSettings(isInitialRoute: true),
-                    builder: (context) => new HomePage(),
+                    builder: (context) => new OthersAndMe(),
                   ),
                 );
             }

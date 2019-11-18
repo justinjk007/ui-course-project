@@ -1,4 +1,5 @@
 import 'package:byke/maps_list_page.dart';
+import 'package:byke/others_and_me.dart';
 import 'package:flutter/material.dart';
 
 import 'maps_list_widget.dart';
@@ -26,15 +27,15 @@ class HomePageState extends State<HomePage> {
             CustomCard(), 
             Text("Recently Completed:"),
             MapsListWidget(
-              title: "OnTechU circle",
+              title: "Don Valley Trail",
               content: Text("Personal Time: 15 minutes\nRanking: 5th"),
               height: 100,
-              image: "assets/map1_crop.jpg",
+              image: "assets/map3_crop.jpg",
             ),
             Text("Popular Nearby:"),
             MapsListWidget(
-              title: "OnTechU circle",
-              content: Text("Personal Time: 15 minutes\nRanking: 5th"),
+              title: "Ontario Tech Loop",
+              content: Text("Personal Time: N/A minutes\nRanking: N/A"),
               height: 100,
               image: "assets/map1_crop.jpg",
             ),
@@ -76,7 +77,7 @@ class HomePageState extends State<HomePage> {
                   context,
                   new MaterialPageRoute(
                     settings: RouteSettings(isInitialRoute: true),
-                    builder: (context) => new HomePage(),
+                    builder: (context) => new OthersAndMe(),
                   ),
                 );
             }
