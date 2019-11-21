@@ -144,20 +144,20 @@ class _LoginRegisterState extends State<LoginRegisterPage> {
             return _password = passvalue.trim();
           },
         ),
-        new TextFormField(
-          maxLines: 1,
-          autofocus: false,
-          decoration: new InputDecoration(
-              hintText: 'Verify Password',
-              icon: new Icon(Icons.lock, color: Colors.grey)),
-          obscureText: true,
-          validator: (passvalue) {
-            return passvalue.isEmpty ? 'Password is Required' : null;
-          },
-          onSaved: (passvalue) {
-            return _verifyPassword = passvalue.trim();
-          },
-        ),
+        // new TextFormField(
+        //   maxLines: 1,
+        //   autofocus: false,
+        //   decoration: new InputDecoration(
+        //       hintText: 'Verify Password',
+        //       icon: new Icon(Icons.lock, color: Colors.grey)),
+        //   obscureText: true,
+        //   validator: (passvalue) {
+        //     return passvalue.isEmpty ? 'Password is Required' : null;
+        //   },
+        //   onSaved: (passvalue) {
+        //     return _verifyPassword = passvalue.trim();
+        //   },
+        // ),
       ];
     } else {
       return [
